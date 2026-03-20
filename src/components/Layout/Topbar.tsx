@@ -2,7 +2,6 @@ import React from 'react';
 import { Bell, Search, User, LogOut } from 'lucide-react';
 import { auth } from '../../firebase';
 import { signOut } from 'firebase/auth';
-import Input from '../UI/Input';
 import styles from './Topbar.module.css';
 
 const Topbar: React.FC = () => {
