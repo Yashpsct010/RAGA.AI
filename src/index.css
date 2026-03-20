@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap');
+
+:root {
+  --background: #f8f9ff;
+  --surface: #f8f9ff;
+  --surface-container: #eceef5;
+  --surface-container-low: #f2f3fa;
+  --surface-container-lowest: #ffffff;
+  --surface-container-highest: #e0e2e9;
+  --primary: #00478d;
+  --primary-container: #005eb8;
+  --on-primary: #ffffff;
+  --on-surface: #181c21;
+  --on-surface-variant: #424752;
+  --outline-variant: #c2c6d4;
+  --error: #ba1a1a;
+  --error-container: #ffdad6;
+  --tertiary: #793100;
+  --tertiary-fixed: #ffdbcb;
+  --success-bg: #e6f6ec;
+  --success-text: #0d8246;
+  --warning-bg: #fff4e5;
+  --warning-text: #b25e02;
+  --critical-bg: #ffdad6;
+  --critical-text: #ba1a1a;
+  
+  --font-display: 'Manrope', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-xl: 12px;
+  --shadow-ambient: 0px 12px 32px rgba(24, 28, 33, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--background);
+  color: var(--on-surface);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--on-surface);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+button {
+  font-family: var(--font-body);
+}
+
+/* Utilities */
+.glass {
+  background: rgba(248, 249, 255, 0.7);
+  backdrop-filter: blur(20px);
+}

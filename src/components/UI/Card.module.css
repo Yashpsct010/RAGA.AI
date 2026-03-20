@@ -1,0 +1,23 @@
+.card {
+  border-radius: var(--radius-xl);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.lowest {
+  background-color: var(--surface-container-lowest);
+}
+
+.low {
+  background-color: var(--surface-container-low);
+}
+
+.high {
+  background-color: var(--surface-container-high);
+}
+
+.highest {
+  background-color: var(--surface-container-highest);
+}

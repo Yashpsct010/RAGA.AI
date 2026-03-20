@@ -1,0 +1,138 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2.5rem;
+  background-color: var(--surface-container-lowest);
+  box-shadow: 0 1px 0 rgba(24, 28, 33, 0.04);
+}
+
+.searchContainer {
+  position: relative;
+  width: 400px;
+}
+
+.searchIconWrapper {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--outline-variant);
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.625rem 1rem 0.625rem 2.5rem;
+  border-radius: 99px;
+  border: 1px solid transparent;
+  background-color: var(--surface-container-low);
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--on-surface);
+  transition: all 0.2s;
+}
+
+.searchInput:focus {
+  outline: none;
+  background-color: var(--surface-container-lowest);
+  border-color: var(--primary-fixed-dim);
+  box-shadow: 0 0 0 2px rgba(0, 94, 184, 0.1);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.iconButton {
+  position: relative;
+  background: transparent;
+  border: none;
+  color: var(--on-surface-variant);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.iconButton:hover {
+  background-color: var(--surface-container-low);
+  color: var(--on-surface);
+}
+
+.badge {
+  position: absolute;
+  top: 2px;
+  right: 4px;
+  background-color: var(--error);
+  color: var(--on-error);
+  font-size: 0.625rem;
+  font-weight: 700;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--surface-container-lowest);
+}
+
+.profileBox {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-left: 1.5rem;
+  border-left: 1px solid var(--surface-container-highest);
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--primary-container);
+  color: var(--on-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.userName {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--on-surface);
+}
+
+.userRole {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--on-surface-variant);
+}
+
+.logoutButton {
+  background: transparent;
+  border: none;
+  color: var(--on-surface-variant);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.logoutButton:hover {
+  background-color: var(--error-container);
+  color: var(--error);
+}

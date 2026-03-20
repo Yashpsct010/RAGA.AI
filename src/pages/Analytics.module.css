@@ -1,0 +1,119 @@
+.analytics {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: var(--on-surface-variant);
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.datePicker {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  padding: 0.625rem 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  background-color: var(--surface-container-highest);
+  color: var(--on-surface);
+  cursor: pointer;
+  outline: none;
+}
+.datePicker:focus {
+  border-color: var(--primary);
+  background-color: var(--surface-container-lowest);
+}
+
+.kpiGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.kpiLabel {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+  margin-bottom: 0.5rem;
+}
+
+.kpiValue {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+}
+
+.trendUp {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--success-text);
+  background-color: var(--success-bg);
+  padding: 0.25rem 0.5rem;
+  border-radius: 99px;
+}
+
+.trendDown {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--critical-text);
+  background-color: var(--critical-bg);
+  padding: 0.25rem 0.5rem;
+  border-radius: 99px;
+}
+
+.chartCard {
+  width: 100%;
+}
+
+.chartTitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.chartWrapper {
+  width: 100%;
+}
+
+.bottomCharts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.5rem;
+}
+
+.halfChart {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+}

@@ -1,0 +1,72 @@
+.sidebar {
+  width: 260px;
+  background-color: var(--surface-container-low);
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid transparent; /* Using structural separation as per design system */
+  box-shadow: 1px 0 0 rgba(24, 28, 33, 0.03);
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 2rem 1.5rem;
+  color: var(--primary);
+}
+
+.logoIcon {
+  color: var(--primary);
+}
+
+.logoText {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.125rem;
+  color: var(--on-surface);
+  letter-spacing: -0.01em;
+}
+
+.navConfig {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0 1rem;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: var(--on-surface-variant);
+  transition: all 0.2s ease;
+}
+
+.navItem:hover {
+  background-color: var(--surface-container);
+  color: var(--on-surface);
+}
+
+.active {
+  background-color: var(--surface-container-highest);
+  color: var(--primary);
+}
+.active .icon {
+  color: var(--primary);
+}
+
+.footer {
+  padding: 1.5rem;
+}
+
+.version {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--outline-variant);
+}
